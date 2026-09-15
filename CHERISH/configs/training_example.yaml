@@ -1,0 +1,28 @@
+model:
+  embed_dim: 512
+  attn_dim: 256
+  dropout: 0.25
+  prototype_dim: 512
+  num_task_b_prototypes_per_class: 8
+  num_task_c_prototypes_per_class: 8
+  use_coords: true
+  use_task_c_residual: true
+  family: hierarchical_taskc
+
+data:
+  split_col: fold
+  max_tiles: 1024
+  sampling: random
+  seed: 42
+  return_coords: true
+
+training:
+  epochs: 30
+  early_stop_patience: 5
+  batch_size: 1
+  num_workers: 0
+  lr: 0.0001
+  weight_decay: 0.0001
+  hierarchy_weight_start: 0.05
+  hierarchy_weight: 0.20
+  hierarchy_weight_warmup_epochs: 6

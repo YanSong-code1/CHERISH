@@ -1,0 +1,14 @@
+# Example only. Replace all paths with approved local paths.
+manifest: /path/to/deidentified_external_manifest.csv
+checkpoint_manifest: /path/to/checkpoint_manifest.csv
+output_dir: /path/to/locked_inference_outputs
+device: cuda:0
+max_tiles: 1024
+sampling: random
+seed: 42
+write_per_fold: true
+locked_policy:
+  estimator: equal_weight_five_checkpoint_ensemble
+  no_threshold_retuning: true
+  task_a_threshold: 0.5
+  task_b_threshold: 0.5

@@ -1,0 +1,16 @@
+# Example only. Replace all paths with approved local paths.
+manifest: /path/to/deidentified_labeled_validation_manifest.csv
+checkpoint_manifest: /path/to/checkpoint_manifest.csv
+output_dir: /path/to/locked_validation_outputs
+device: cuda:0
+max_tiles: 1024
+sampling: random
+seed: 42
+write_per_fold: false
+locked_policy:
+  estimator: equal_weight_five_checkpoint_ensemble
+  no_threshold_retuning: true
+  no_calibration_refit: true
+  task_a_threshold: 0.5
+  task_b_threshold: 0.5
+  task_c_decision_rule: argmax_probability

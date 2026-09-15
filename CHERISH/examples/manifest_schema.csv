@@ -1,0 +1,2 @@
+slide_id,patient_id,feature_bag_path,task_a_label_bin,task_b_label_bin,task_b_mask,task_c_label_index,task_c_mask,reference_pathway_label,cohort_label
+anon_slide_0001,anon_patient_0001,/path/to/deidentified_feature_bags/anon_slide_0001.h5,1,0,1,2,1,IHC3,training_or_validation

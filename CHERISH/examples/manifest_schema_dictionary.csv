@@ -1,0 +1,11 @@
+field,required_for,reader-facing meaning,allowed values / notes
+slide_id,training and inference,Deidentified slide identifier,Stable anonymous token; private slide identifiers should not be used.
+patient_id,training and fold splitting,Deidentified patient identifier,Stable anonymous token used to prevent patient-level leakage across folds.
+feature_bag_path,training and inference,Runtime path to a user-supplied deidentified feature bag,Replace with an approved local path before running the scripts.
+task_a_label_bin,training,Polarity-anchor morphology-axis label,0 = negative-side morphology; 1 = amplification/strong-overexpression-side morphology; not a stand-alone clinical HER2-positive endpoint.
+task_b_label_bin,training,Positive-boundary module binary label,Used only when task_b_mask = 1; 0 = strong-overexpression side; 1 = amplification-associated side.
+task_b_mask,training,Availability flag for the positive-boundary module label,1 = label available; 0 = not used for this supervisory level.
+task_c_label_index,training and primary boundary-state evaluation,Primary boundary-state class label,"0 = IHC2/FISH-negative; 1 = IHC2/FISH-positive; 2 = IHC3; -1 or blank = unavailable."
+task_c_mask,training and primary boundary-state evaluation,Availability flag for the primary boundary-state label,1 = label available; 0 = not used for the primary boundary-state loss or metric.
+reference_pathway_label,four-category pathway-readout evaluation,Reference HER2 clinical category for derived pathway readout summaries,"Optional; accepted canonical values are IHC0/1+, IHC2/FISH_negative, IHC2/FISH_positive and IHC3."
+cohort_label,bookkeeping,Deidentified cohort or split label,Optional reader-facing stratum label.
