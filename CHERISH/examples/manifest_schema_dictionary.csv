@@ -1,0 +1,11 @@
+field,used_for,description,values
+slide_id,training and inference,Slide identifier,Must match split_schema.csv.
+patient_id,fold assignment,Patient identifier,Slides from one patient stay in the same fold.
+feature_bag_path,training and inference,Path to the CONCH v1.5 feature file (.h5 or .npz),Datasets: features (N x 768) and coords (N x 2).
+task_a_label_bin,training,Task A label,0 = IHC 0/1+ or IHC 2+/FISH nonamplified; 1 = IHC 2+/FISH amplified or IHC 3+.
+task_b_label_bin,training,Task B label,Used when task_b_mask = 1; 1 = IHC 2+/FISH amplified; 0 = IHC 3+.
+task_b_mask,training,Task B eligibility,1 = HER2-positive case; 0 = otherwise.
+task_c_label_index,training and evaluation,Task C label,0 = IHC 2+/FISH nonamplified; 1 = IHC 2+/FISH amplified; 2 = IHC 3+; -1 = not eligible.
+task_c_mask,training and evaluation,Task C eligibility,1 = IHC 2+ or IHC 3+; 0 = IHC 0/1+.
+reference_pathway_label,four-state readout,Clinical HER2 category,"IHC0/1+, IHC2/FISH_negative, IHC2/FISH_positive or IHC3."
+cohort_label,optional,Cohort or center label,Free text.

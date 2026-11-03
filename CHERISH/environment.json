@@ -1,0 +1,29 @@
+{
+  "scope": "CHERISH training, inference and evaluation",
+  "language": "Python",
+  "python": "3.12.10",
+  "pytorch": "2.10.0+cu128",
+  "torchvision": "0.25.0",
+  "cuda": "12.8",
+  "nvidia_driver": "580.95.05",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "gpu_memory_GB": 32,
+    "cpu": "Intel Xeon E5-2680 v4",
+    "logical_cpus": 56,
+    "ram_GiB": 188
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "h5py": "3.15.1",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.1.1",
+    "openslide-python": "1.4.3",
+    "statsmodels": "0.14.6"
+  },
+  "separate_pipelines": "Feature extraction used TRIDENT with CONCH v1.5, nuclear segmentation used TIAToolbox 1.6.0 (HoVer-Net, MoNuSAC weights), and spatial cell-state mapping used cell2location; these run in their own environments as documented by their developers."
+}

@@ -1,0 +1,41 @@
+# License
+
+## Code
+
+The code in this repository is released for **non-commercial academic research use only**.
+
+Copyright (c) 2026 Chongqing University Cancer Hospital
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use the Software solely for non-commercial academic research purposes, subject to the following conditions:
+
+1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+2. The Software may not be used for commercial purposes. Commercial purposes include, but are not limited to: (a) integration into a commercial product; (b) use in a commercial service; (c) consulting or other services for commercial gain.
+
+3. Redistributions of the Software, in whole or in part, must cite the original publication:
+
+   Song, Y., et al. (2026). CHERISH: Hierarchical Recognition and Histological Phenotyping of Clinical HER2 States in Pretreatment Breast Cancer Biopsies. _Advanced Science_, in press.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Data
+
+Institutional histology images, tile-level features, and trained model weights are **not included** in this repository. They are available for non-commercial research on reasonable request, subject to:
+
+- Execution of a data transfer agreement
+- Institutional ethics committee approval
+- Acknowledgment in resulting publications
+
+Contact the corresponding authors via the manuscript for data access requests.
+
+## CONCH Foundation Model
+
+This software uses CONCH v1.5 embeddings. CONCH weights are subject to the original CC BY-NC-ND 4.0 license and are **not included or redistributed** in this repository. Users must obtain CONCH weights separately from the original authors:
+
+> Lu, Ming Y., et al. "A visual-language foundation model for computational pathology." _Nature Medicine_ 30.3 (2024): 863-874.
+
+Under the CC BY-NC-ND 4.0 license:
+- **NonCommercial**: CONCH may not be used for commercial purposes.
+- **NoDerivatives**: CONCH weights may not be modified or redistributed.
+
+Users are responsible for complying with the CONCH license terms.

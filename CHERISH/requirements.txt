@@ -1,0 +1,14 @@
+# CHERISH core environment: Python 3.12.10, CUDA 12.8
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.10.0+cu128
+torchvision==0.25.0
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.8.0
+h5py==3.15.1
+PyYAML==6.0.3
+matplotlib==3.10.8
+Pillow==12.1.1
+openslide-python==1.4.3
+statsmodels==0.14.6
