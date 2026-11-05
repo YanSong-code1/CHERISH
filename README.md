@@ -90,7 +90,7 @@ The conditional amplification score within IHC 2+ disease is `p_C[1] / (p_C[0] +
 
 ## Environment
 
-Tested on Ubuntu 22.04 with an NVIDIA RTX 5090, CUDA 12.8, and PyTorch 2.10.0+cu128. See `environment.json` for the full configuration. Training one fold takes about 6 hours; locked ensemble inference on 1,410 slides takes about 45 minutes.
+Tested on Ubuntu 22.04 with an NVIDIA RTX 5090, CUDA 12.8, and PyTorch 2.10.0+cu128. See `environment.json` for the full configuration. 
 
 ## Citation
 
