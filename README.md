@@ -94,7 +94,7 @@ Tested on Ubuntu 22.04 with an NVIDIA RTX 5090, CUDA 12.8, and PyTorch 2.10.0+cu
 
 ## Citation
 
-Song, Y., et al. (2026). CHERISH: Hierarchical Recognition and Histological Phenotyping of Clinical HER2 States in Pretreatment Breast Cancer Biopsies. *Advanced Science*, in press.
+Song, Y., et al. (2026). CHERISH: Hierarchical Recognition and Histological Phenotyping of Clinical HER2 States in Pretreatment Breast Cancer Biopsies. 
 
 ## License
 
