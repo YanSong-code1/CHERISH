@@ -9,9 +9,6 @@
   "hardware": {
     "gpu": "NVIDIA GeForce RTX 5090",
     "gpu_memory_GB": 32,
-    "cpu": "Intel Xeon E5-2680 v4",
-    "logical_cpus": 56,
-    "ram_GiB": 188
   },
   "packages": {
     "numpy": "2.2.6",
