@@ -1,5 +1,4 @@
 {
-  "scope": "CHERISH training, inference and evaluation",
   "language": "Python",
   "python": "3.12.10",
   "pytorch": "2.10.0+cu128",
